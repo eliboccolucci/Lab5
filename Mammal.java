@@ -1,6 +1,6 @@
 
 /**
- * A class that implements the IMammal interface
+ * A class that implements the IMammal interface that contains leg count
  *
  * @invariant commonName != null 
  *            genus != null 
