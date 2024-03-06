@@ -21,8 +21,17 @@ public class AnimalDriver {
 
 
         //print out description of each animal in the list.
+        int legs = 0;
+        int fin = 0;
+        
         for (IAnimal animal : myAnimals) {
             System.out.println(animal.getDescription());
+            if (animal instanceof Fish){
+                fin += ((fish)a).getFinCout();
+            }
+            else if (animal instanceof Mammal){
+                legs += ((Mammal)a).getLegCount();                
+            }
         }
 
     }
