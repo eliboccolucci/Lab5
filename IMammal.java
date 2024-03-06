@@ -8,12 +8,19 @@
  *      legCount > 0
  *
  * @initialization_ensures 
+ *                   a species, mammal object will be created with the number of legs, genus, and common name
  *
  */
 public interface IMammal extends IAnimal
 {
     /**
-     * @return The number of legs the mammal has
-     */
+    * Gets the legs count
+    *
+    * @return The number of legs the mammal has
+    *
+    * @pre None
+    * 
+    * @post getLegCount = legs AND common = #common AND speciesName = #speciesName AND genus = #genus AND legs = #legs
+    */
     public int getLegCount();
 }
