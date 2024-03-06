@@ -20,6 +20,10 @@ public interface IAnimal
      * Returns the common name of the animal.
      *
      * @return a String representing the animal's common name.
+     *
+     * @pre none
+     *
+     * @post returns != Null
      */
     public String getCommonName();
 
@@ -27,6 +31,10 @@ public interface IAnimal
      * Returns the genus of the animal.
      *
      * @return a String representing the animal's genus
+     *
+     * @pre none
+     *
+     * @post returns != Null
      */
     public String getGenus();
 
@@ -34,6 +42,10 @@ public interface IAnimal
      * Returns the Species of the animal.
      *
      * @return a String representing the specific name of species for the animal
+     *
+     * @pre none
+     *
+     * @post returns != Null
      */
     public String getSpecies();
 
@@ -42,6 +54,10 @@ public interface IAnimal
      * genus, and species in proper formatting.
      *
      * @return a String representing the full description of the animal.
+     *
+     * @pre commonName != NULL AND genus != NULL AND species != NULL
+     *
+     * @post returns a non-null String that combines commonName, genus, and species into a single formatted description.
      */
     public default String getDescription(){
         String properGenusFormatting = getGenus().substring(0,1).toUpperCase() + getGenus().substring(1).toLowerCase();
