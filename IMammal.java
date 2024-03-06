@@ -2,12 +2,12 @@
  * Interface that extends the IAnimal inteface and adds methods specific to mammals
  *
  * @defines
- *      #LegCount       // Counts the amount of legs the mammal has
+ *      LegCount       // Counts the amount of legs the mammal has
  *
  * @constraints
- *      legCount > 0k
+ *      legCount > 0
  *
- * @initialization_ensures
+ * @initialization_ensures 
  *
  */
 public interface IMammal extends IAnimal
