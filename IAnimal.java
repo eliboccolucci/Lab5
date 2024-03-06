@@ -7,7 +7,7 @@
  * species: a String that represents a certain species of animal.
  *
  * @constraints
- * commonName, genus, and species must not be null or empty.
+ * commonName, genus, and species != NULL
  * species and genus should follow the binomial nomenclature naming system.
  *
  * @initialization_ensures
