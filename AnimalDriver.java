@@ -20,6 +20,10 @@ public class AnimalDriver {
         //Do not change anything above this line------------------------------------------------------------------------
 
 
+        //print out description of each animal in the list.
+        for (IAnimal animal : myAnimals) {
+            System.out.println(animal.getDescription());
+        }
 
     }
 }
