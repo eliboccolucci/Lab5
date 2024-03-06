@@ -2,12 +2,12 @@
  * Defines the general properties and behaviors of an animal.
  *
  * @defines
- * commonName: a String that represents the common name of the animal.
- * genus: a String that represents the genus part of the scientific name for an animal.
- * species: a String that represents a certain species of animal.
+ * commonName: a String that = the common name of the animal.
+ * genus: a String that = the genus part of the scientific name for an animal.
+ * species: a String that = a certain species of animal.
  *
  * @constraints
- * commonName, genus, and species must not be null or empty.
+ * commonName, genus, and species != NULL
  * species and genus should follow the binomial nomenclature naming system.
  *
  * @initialization_ensures
