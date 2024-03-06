@@ -33,6 +33,7 @@ public class AnimalDriver {
                 legs += ((Mammal)a).getLegCount();                
             }
         }
-
+        System.out.println("Total fins: " + fin);
+        System.out.println("Total legs: " + legs);
     }
 }
