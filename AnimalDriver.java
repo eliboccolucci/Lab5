@@ -27,10 +27,10 @@ public class AnimalDriver {
         for (IAnimal animal : myAnimals) {
             System.out.println(animal.getDescription());
             if (animal instanceof Fish){
-                fin += ((fish)a).getFinCout();
+                fin += ((Fish)animal).getFinCount();
             }
             else if (animal instanceof Mammal){
-                legs += ((Mammal)a).getLegCount();                
+                legs += ((Mammal) animal).getLegCount();
             }
         }
         System.out.println("Total fins: " + fin);
